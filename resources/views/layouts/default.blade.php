@@ -7,8 +7,9 @@
   <meta name="Keywords" content="">
   <meta name="Description" content="">
   <title>@yield('title','web')-社区</title>
-  <link rel="stylesheet" href="/css/app.css">
+  <!-- <link rel="stylesheet" href="/css/app.css"> -->
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+
  </head>
  <body>
 	 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">

@@ -13,6 +13,7 @@ class SessionsController extends Controller
     	return view('sessions.create');
     }
 
+    //验证登录
     public function store(Request $request)
     {
     	$data=$this->validate($request,[
@@ -29,4 +30,12 @@ class SessionsController extends Controller
     		return redirect()->back()->withInput();
     	}
     }
+
+    //退出登录
+	public function destroy()
+	{
+		# code...
+		Auth::logout();
+		session::flash('success','成功退出');
+	}
 }

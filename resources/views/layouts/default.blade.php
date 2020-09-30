@@ -9,7 +9,7 @@
   <title>@yield('title','web')-社区</title>
   <!-- <link rel="stylesheet" href="/css/app.css"> -->
   <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-
+  <script type="text/javascript" src="{{mix('js/app.js')}}"></script>
  </head>
  <body>
 	@include('layouts._header')
@@ -20,6 +20,6 @@
   		@include('layouts._footer')
 		</div>
 	</div>
-
+ 
  </body>
 </html>
